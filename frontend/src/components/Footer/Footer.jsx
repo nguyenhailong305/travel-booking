@@ -35,6 +35,8 @@ const quick__links2 = [
 ];
 
 const Footer = () => {
+
+  const year = new Date().getFullYear();
   return (
     <footer className="footer">
       <Container>
@@ -105,7 +107,17 @@ const Footer = () => {
                     <span><i className="ri-map-pin-line"></i></span>
                    Address: 
                   </h6>
-                  <p className="">Sylhet ,</p>
+                  <p className="mb-0">Sylhet ,</p>
+                </ListGroupItem>
+
+            </ListGroup>
+            <ListGroup className="footer__quick-links">
+                <ListGroupItem className="ps-0 border-0 d-flex align-align-items-center justify gap-3">
+                  <h6 className="mb-0 d-flex align-items-center gap-2">
+                    <span><i className="ri-map-pin-line"></i></span>
+                   Email: 
+                  </h6>
+                  <p className="mb-0">nguyenhailong305</p>
                 </ListGroupItem>
 
             </ListGroup>
@@ -113,23 +125,17 @@ const Footer = () => {
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                   <h6 className="mb-0 d-flex align-items-center gap-2">
                     <span><i className="ri-map-pin-line"></i></span>
-                   Address: 
+                   Phone: 
                   </h6>
-                  <p className="">Sylhet ,</p>
-                </ListGroupItem>
-
-            </ListGroup>
-            <ListGroup className="footer__quick-links">
-                <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
-                  <h6 className="mb-0 d-flex align-items-center gap-2">
-                    <span><i className="ri-map-pin-line"></i></span>
-                   Address: 
-                  </h6>
-                  <p className="">Sylhet ,</p>
+                  <p className="mb-0">+84364697068</p>
                 </ListGroupItem>
 
             </ListGroup>
             
+          </Col>
+
+          <Col lg="12" className="text-center pt-5">
+            <p className="copyright" >Copyright {year} , design and develop by nguyenhailong . All right reserved</p>
           </Col>
         </Row>
       </Container>
